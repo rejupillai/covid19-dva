@@ -152,8 +152,10 @@
 
     var svg = d3.select("body")
       .append("svg")
-      .attr("width", "100%")
-      .attr("height", "100%")
+      //.attr("width", "100%")
+      //.attr("height", "100%")
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "0 0 960 500")
       .append('g')
       .attr('class', 'map');
 
